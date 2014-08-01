@@ -18,7 +18,10 @@ exports.config =
           'vendor/js/jquery.js',
           'vendor/js/underscore.js',
           'vendor/js/knockout.js',
-          'vendor/js/bootstrap/tooltip.js',
+          'vendor/js/knockout.validation.js',
+          'vendor/js/globalize.js',
+          'vendor/js/utils.js',
+          'vendor/js/bootstrap/tooltip.js'
         ]
     stylesheets:
       defaultExtension: 'less',
