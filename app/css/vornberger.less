@@ -4,8 +4,6 @@ body {
     background: #333333;
     color: #aaaaaa;
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-    font-size: 20px;
-    line-height: 35px;
     font-weight: 100;
 
     h1,h2,h3,h4,h5,h6 {
@@ -28,8 +26,34 @@ body {
             }
         }
 
-        p {
-            margin: 0 2em;
+        .content1 {
+            margin-top: -50px;
+            padding-bottom: 4rem;
+
+            > div {
+                padding-top: 3rem;
+
+                &:first-child {
+                    border-right: 1px solid #333333;
+                }
+            }
+            h2, p {
+                margin: 0 5rem;
+                line-height: 1.5em;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        .content2 {
+            background: #fff;
+            color: #333;
+
+            h3, p {
+                color: #333; 
+            }
         }
     }
 
@@ -47,12 +71,12 @@ body {
         margin-top: -50px;
         z-index: 1000;
 
-        &.fixed {
-            position: fixed;
-            top: 0px;
-            left: 0px;
-            margin-top: 0px;
-        }
+        // &.fixed {
+        //     position: fixed;
+        //     top: 0px;
+        //     left: 0px;
+        //     margin-top: 0px;
+        // }
     }
     #sticky_navigation ul { list-style:none; margin:0; padding:5px; }
     #sticky_navigation ul li { margin:0; padding:0; display:inline; }
